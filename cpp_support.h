@@ -20,7 +20,7 @@
 #ifdef _WIN32
 #include <malloc.h>
 #else
-#include <alloca.h>
+#include <stdlib.h>
 #endif
 #endif
 
