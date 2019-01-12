@@ -6,7 +6,7 @@
 #include <limits.h>
 #include <inttypes.h>
 
-#if ((SIZE_MAX) == (UINT32_MAX)) && !defined(__HAIKU__)
+#if ((SIZE_MAX) == (UINT32_MAX)) && !defined(__HAIKU__) && !defined(__OpenBSD__)
 #define CAST_UINT32_TO_SIZE_T
 #define CAST_SIZE_T_TO_UINT32
 #else
