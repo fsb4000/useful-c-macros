@@ -6,7 +6,9 @@
 #include <inttypes.h>
 
 #ifndef __cplusplus
+#if (__STDC_VERSION__ >= 201112L)
 #include <stdalign.h>
+#endif
 #include <stdbool.h>
 #define noexcept
 #define nullptr ((void*) 0)
